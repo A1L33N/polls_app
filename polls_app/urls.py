@@ -19,7 +19,7 @@ from django.contrib import admin
 from . import views
 urlpatterns = [
     url(r'^polls/', include('polls.urls')),
-    url(r'^$', views.home_page),
+    url(r'^$', views.home_page, name='home'),
     url(r'^admin/', admin.site.urls),
 
 ]
